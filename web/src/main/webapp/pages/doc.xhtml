@@ -1,0 +1,99 @@
+<ui:composition template="../WEB-INF/main-temp.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+   <ui:define name="main-head">
+      <meta name="Description" content="Iranian Handwoven Carpets - Explore our exquisite collection at our online store"/>
+              <h:outputStylesheet library="css" name="scribbler-global.css"/>
+              <h:outputStylesheet library="css" name="scribbler-doc.css"/>
+   </ui:define>
+   <ui:define name="main-body">
+      <div class="breadcrumb-wrap">
+         <div class="container-fluid">
+            <ul class="breadcrumb">
+               <li class="breadcrumb-item"><a href="#">Home</a></li>
+               <li class="breadcrumb-item"><a href="#">Products</a></li>
+               <li class="breadcrumb-item active">Product List</li>
+            </ul>
+         </div>
+      </div>
+      <div class="wrapper rtl-elem">
+         <aside class="doc__nav">
+            <ul>
+               <li class="js-btn selected">Get Started</li>
+               <li class="js-btn">Configuration</li>
+               <li class="js-btn">Keybindings</li>
+               <li class="js-btn">Issues</li>
+            </ul>
+         </aside>
+         <article class="doc__content">
+            <section class="js-section">
+               <h3 class="section__title">Get Started</h3>
+               <p>Learn how to configure settings for Scribbler, such as your syntax highlighting preference and the default saving folder location.</p>
+               <h3 class="section__title">Installation</h3>
+               <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                $ scribbler  ——config
+                  {
+                    “encryption”: true,
+                    “highlighting“: true,
+                    “prettyTable”: false,
+                    “font”: [“Helvetica”, “sans-serif”],
+                    “folder”: “~/Desktop“
+                  }
+              </code>
+            </pre>
+               </div>
+            </section>
+            <section class="js-section">
+               <h3 class="section__title">Configuration</h3>
+               <p>Learn how to configure settings for Scribbler, such as your syntax highlighting preference and the default saving folder location.</p>
+               <table id="customers">
+                  <tr>
+                     <th>Options</th>
+                     <th>Value</th>
+                     <th>Default</th>
+                  </tr>
+                  <tr>
+                     <td>encryption</td>
+                     <td>encrypt all notes before saving. If turned on, it requires password to open the file.</td>
+                     <td>false</td>
+                  </tr>
+                  <tr>
+                     <td>highlighting</td>
+                     <td>Show syntax highlight on markdown text.</td>
+                     <td>true</td>
+                  </tr>
+                  <tr>
+                     <td>prettyTable</td>
+                     <td>Render table with Scribbler’s pretty table style.</td>
+                     <td>true</td>
+                  </tr>
+               </table>
+               <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
+               <hr />
+            </section>
+            <section class="js-section">
+               <h3 class="section__title">Keybindings</h3>
+               <p>Lorem ipsum dolor sit amet, scripta tibique indoctum sit ei, mel inani aeterno ad. Facer oratio ex per. At eam movet verear, in sea brute patrioque disputando, usu nonumes torquatos an. Ex his quaerendum intellegebat, ut vel homero accusam. Eum at debet tibique, in vocibus temporibus adversarium sed. Porro verear eu vix, ne usu tation vituperata.</p>
+               <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
+               <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
+               <hr />
+            </section>
+            <section class="js-section">
+               <h3 class="section__title">Issues</h3>
+               <p>Lorem ipsum dolor sit amet, scripta tibique indoctum sit ei, mel inani aeterno ad. Facer oratio ex per. At eam movet verear, in sea brute patrioque disputando, usu nonumes torquatos an. Ex his quaerendum intellegebat, ut vel homero accusam. Eum at debet tibique, in vocibus temporibus adversarium sed. Porro verear eu vix, ne usu tation vituperata.</p>
+               <p>Malis percipitur an pro. Pro aperiam persequeris at, at sonet sensibus mei, id mea postulant definiebas concludaturque. Id qui malis abhorreant, mazim melius quo et. At eam altera dolorum, case dicant lobortis ius te, ad vel affert oportere reprehendunt. Quo no verterem deseruisse, mea brute postea te, ne per tacimates suavitate vituperatoribus.</p>
+            </section>
+         </article>
+      </div>
+   </ui:define>
+   <ui:define name="main-foot">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+      <h:outputScript library="js" name="scribbler.js"/>
+   </ui:define>
+</ui:composition>

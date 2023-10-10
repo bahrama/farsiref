@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <meta charset="utf-8"/>
+    <title>E Store - eCommerce HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="eCommerce HTML Template Free Download" name="keywords"/>
+    <meta content="eCommerce HTML Template Free Download" name="description"/>
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"/>
+
+    <h:outputStylesheet library="lib" name="slick/slick.css"/>
+    <h:outputStylesheet library="lib" name="slick/slick-theme.css"/>
+    <h:outputStylesheet library="css" name="fonts.css"/>
+    <h:outputStylesheet library="css" name="style.css"/>
+    <ui:insert name="main-head"/>
+</h:head>
+<h:body>
+    <f:view encoding="UTF-8">
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row rtl-elem">
+                    <div class="col-sm-6">
+                        <i class="fa fa-envelope"></i>
+                        alialikhahasl@gmail.com
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fa fa-phone-alt"></i>
+                        09028882203
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav rtl-elem">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active font-IransansBold">خانه</a>
+                            <a href="product-list.html" class="nav-item nav-link font-IransansBold">لیست کتاب ها</a>
+                            <a href="product-detail.html" class="nav-item nav-link font-IransansBold">درباره ما</a>
+                            <a href="cart.html" class="nav-item nav-link font-IransansBold">تماس با ما</a>
+                        </div>
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">مهمان</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">ورود</a>
+                                    <a href="#" class="dropdown-item">ثبت نام</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <h:graphicImage
+                                        value="/Images/farsiRef.jpg"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <input type="text" placeholder="Search"/>
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <h1 class="fnt15">
+                                سایت ترجمه فارسی منابع معتبر رشته کامپیوتر
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ui:insert name="main-body"/>
+
+        <div class="footer cust-dir">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>تماس</h2>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>تهران , میرداماد</p>
+                                <p><i class="fa fa-envelope"></i>alialikhahasl@gmail.com</p>
+                                <p><i class="fa fa-phone"></i>09028882203</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>ما را دنبال کنید</h2>
+                            <div class="contact-info">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-telegram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>بخش های سایت</h2>
+                            <ul>
+                                <li><a href="#">لیست کتاب ها</a></li>
+                                <li><a href="#">درباره ما</a></li>
+                                <li><a href="#">ارتباط با ما</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>منابع</h2>
+                            <ul>
+                                <li><a href="#">j2ee</a></li>
+                                <li><a href="#">vmware</a></li>
+                                <li><a href="#">gitlab</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row payment align-items-center">
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="payment-security">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>گرداورنده و ترجمه و طراحی سایت از علی علی خواه</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </f:view>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <h:outputScript library="lib" name="easing/easing.min.js"/>
+    <h:outputScript library="lib" name="slick/slick.min.js"/>
+    <h:outputScript library="js" name="main.js"/>
+
+    <ui:insert name="main-foot"/>
+</h:body>
+</html>
