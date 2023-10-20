@@ -12,19 +12,14 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+@Entity(name="book")
 @Table(name="book")
 @Getter
 @Setter
 @EqualsAndHashCode
 @Cacheable(value = false)
 @NoArgsConstructor
-public class Book implements Serializable {
-    private static final long serialVersionUID = 1L;
-
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+public class Book extends BaseModel {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "book_type" , length = 20 , nullable = false)

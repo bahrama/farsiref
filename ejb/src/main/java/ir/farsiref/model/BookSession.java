@@ -7,19 +7,15 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
-@Entity
+@Entity(name="book_session")
 @Table(name="book_session")
 @Getter
 @Setter
 @EqualsAndHashCode
 @Cacheable(value = false)
 @NoArgsConstructor
-public class BookSession implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class BookSession  extends BaseModel{
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
     @Column(length = 100 , nullable = false , unique = true)
     private String title;
     @Column(length = 2000 , nullable = false , unique = true)

@@ -9,19 +9,14 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
-@Entity
+@Entity(name="home")
 @Table(name="home")
 @Getter
 @Setter
 @EqualsAndHashCode
 @Cacheable(value = false)
 @NoArgsConstructor
-public class Home implements Serializable {
-    private static final long serialVersionUID = 1L;
-
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+public class Home  extends BaseModel{
 
     @Enumerated(EnumType.STRING)
     @Column(name = "home_type" , length = 20 , nullable = false)
